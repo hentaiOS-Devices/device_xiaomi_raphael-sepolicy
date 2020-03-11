@@ -8,3 +8,9 @@ dontaudit {
   surfaceflinger
   vendor_sensors
 } sysfs_msm_subsys:dir search;
+
+# Ignore harmless QCOM denials
+dontaudit gmscore_app {
+  bt_firmware_file
+  firmware_file
+}:filesystem getattr;
