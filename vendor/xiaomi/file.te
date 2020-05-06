@@ -1,3 +1,6 @@
+# Adsp
+type public_adsprpcd_file, file_type;
+
 # Define file types used by pixel powerhal and powerstats
 type sysfs_iio_devices, fs_type, sysfs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
