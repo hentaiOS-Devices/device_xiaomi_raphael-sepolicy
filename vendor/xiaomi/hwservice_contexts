@@ -11,3 +11,4 @@ vendor.hentai.camera.motor::ICameraMotor                                    u:ob
 
 # Pixelstats
 hardware.google.pixelstats::IPixelStats                                     u:object_r:hal_pixelstats_hwservice:s0
+vendor.qti.hardware.bt_channel_avoidance::IBTChannelAvoidance               u:object_r:hal_bt_channel_avoidance_hwservice:s0
