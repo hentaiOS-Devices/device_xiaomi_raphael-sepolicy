@@ -1,3 +1,7 @@
 attribute hal_hentai_fod;
 attribute hal_hentai_fod_client;
 attribute hal_hentai_fod_server;
+
+attribute hal_hentai_camera_motor;
+attribute hal_hentai_camera_motor_client;
+attribute hal_hentai_camera_motor_server;

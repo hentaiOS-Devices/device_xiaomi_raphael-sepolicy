@@ -19,6 +19,7 @@
 # Motor
 /dev/akm09970                                                                                          u:object_r:akm09970_device:s0
 /dev/drv8846_dev                                                                                       u:object_r:drv8846_device:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1.0-service                                             u:object_r:hal_hentai_camera_motor_default_exec:s0
 /sys/class/leds/blue/brightness                                                                        u:object_r:sysfs_oem:s0
 /sys/class/leds/green/brightness                                                                       u:object_r:sysfs_oem:s0
 

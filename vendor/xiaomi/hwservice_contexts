@@ -5,5 +5,9 @@ vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint             u:ob
 # FOD
 vendor.hentai.biometrics.fingerprint.inscreen::IFingerprintInscreen         u:object_r:hal_hentai_fod_hwservice:s0
 
+# Camera motor
+vendor.xiaomi.hardware.motor::IMotor                                        u:object_r:hal_xiaomi_camera_motor_hwservice:s0
+vendor.hentai.camera.motor::ICameraMotor                                    u:object_r:hal_hentai_camera_motor_hwservice:s0
+
 # Pixelstats
 hardware.google.pixelstats::IPixelStats                                     u:object_r:hal_pixelstats_hwservice:s0

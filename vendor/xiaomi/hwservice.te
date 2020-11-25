@@ -2,3 +2,7 @@ type hal_pixelstats_hwservice, hwservice_manager_type;
 
 # FOD
 type hal_hentai_fod_hwservice, hwservice_manager_type;
+
+# Camera motor
+type hal_hentai_camera_motor_hwservice, hwservice_manager_type;
+type hal_xiaomi_camera_motor_hwservice, hwservice_manager_type;
