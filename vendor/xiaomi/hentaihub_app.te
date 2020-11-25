@@ -1,0 +1,39 @@
+type hentaihub_app, domain;
+
+app_domain(hentaihub_app)
+
+# Allow hentaihub to find system services
+allow hentaihub_app {
+  app_api_service
+  audioserver_service
+  cameraserver_service
+  drmserver_service
+  mediaextractor_service
+  mediametrics_service
+  mediaserver_service
+  nfc_service
+  surfaceflinger_service
+}:service_manager find;
+
+# Allow hentaihub_app to find hal_motor_hwservice
+allow hentaihub_app hal_xiaomi_camera_motor_hwservice:hwservice_manager find;
+
+# Allow hentaihub_app read and write /data/data subdirectory
+allow hentaihub_app system_app_data_file:dir create_dir_perms;
+allow hentaihub_app system_app_data_file:{ 
+  file
+  lnk_file
+} create_file_perms;
+
+# Allow binder communication with gpuservice/hal_hentai_camera_motor
+binder_call(hentaihub_app, gpuservice)
+binder_call(hentaihub_app, hal_hentai_camera_motor)
+
+# Allow hentaihub_app to read and write to cgroup/sysfs_graphics/sysfs_leds
+r_dir_file(hentaihub_app, sysfs_leds)
+r_dir_file(hentaihub_app, vendor_sysfs_graphics)
+allow hentaihub_app {
+  cgroup
+  sysfs_leds
+  vendor_sysfs_graphics
+}:file rw_file_perms;

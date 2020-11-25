@@ -23,3 +23,9 @@ allow hal_hentai_camera_motor_default {
 # Create HIDL interface for camera motor
 add_hwservice(hal_hentai_camera_motor_default, hal_xiaomi_camera_motor_hwservice)
 allow hal_hentai_camera_motor_default hal_xiaomi_camera_motor_hwservice:hwservice_manager find;
+
+# Allow binder communication with hentaihub
+binder_call(hal_hentai_camera_motor_default, hentaihub_app)
+
+# Allow communication with cameraserver
+hal_client_domain(cameraserver, hal_hentai_camera_motor)
