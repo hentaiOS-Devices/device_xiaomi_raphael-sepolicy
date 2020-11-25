@@ -1,3 +1,6 @@
 # Fingerprint
 vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon     u:object_r:hal_fingerprint_hwservice_xiaomi:s0
 vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint             u:object_r:hal_fingerprint_hwservice_xiaomi:s0
+
+# Pixelstats
+hardware.google.pixelstats::IPixelStats                                     u:object_r:hal_pixelstats_hwservice:s0

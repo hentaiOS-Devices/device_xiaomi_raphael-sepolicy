@@ -3,3 +3,6 @@ type persist_sensors_prop, property_type;
 
 # Fingerprint
 type vendor_fp_prop, property_type;
+
+# Pixel PowerHal
+vendor_internal_prop(vendor_power_prop)
