@@ -24,6 +24,9 @@
 # Remosaic
 /vendor/bin/remosaic_daemon                                                                            u:object_r:remosaic_daemon_exec:s0
 
+# Pixel Health
+/vendor/bin/hw/android\.hardware\.health@2\.1-service\.raphael                                         u:object_r:hal_health_default_exec:s0
+
 # Pixel Powerhal
 /vendor/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr                                      u:object_r:hal_power_default_exec:s0
 
