@@ -1,1 +1,4 @@
 type hal_pixelstats_hwservice, hwservice_manager_type;
+
+# FOD
+type hal_hentai_fod_hwservice, hwservice_manager_type;
