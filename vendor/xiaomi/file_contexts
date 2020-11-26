@@ -30,6 +30,9 @@
 # Remosaic
 /vendor/bin/remosaic_daemon                                                                            u:object_r:remosaic_daemon_exec:s0
 
+# Pixel atrace
+/vendor/bin/hw/android\.hardware\.atrace@1\.0-service.pixel                                            u:object_r:hal_atrace_default_exec:s0
+
 # Pixel Health
 /vendor/bin/hw/android\.hardware\.health@2\.1-service\.raphael                                         u:object_r:hal_health_default_exec:s0
 
