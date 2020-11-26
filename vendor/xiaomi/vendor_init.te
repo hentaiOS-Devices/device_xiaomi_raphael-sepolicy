@@ -2,8 +2,9 @@
 set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_persist_camera_prop)
 
-# Allow vendor_init to write to vm and energy aware sysfs
+# Allow vendor_init to write to vm, clk debugfs and energy aware sysfs
 allow vendor_init {
+  vendor_debugfs_clk
   proc_dirty
   proc_sched_energy_aware
 }:file w_file_perms;
