@@ -2,8 +2,11 @@
 set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_persist_camera_prop)
 
-# Allow vendor_init to write to energy aware sysfs
-allow vendor_init proc_sched_energy_aware:file w_file_perms;
+# Allow vendor_init to write to vm and energy aware sysfs
+allow vendor_init {
+  proc_dirty
+  proc_sched_energy_aware
+}:file w_file_perms;
 
 # Allow vendor_init to set Powerhal properties
 set_prop(vendor_init, vendor_power_prop)
