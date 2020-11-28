@@ -22,3 +22,9 @@ allow hal_sensors_default system_server:fd use;
 
 get_prop(hal_sensors_default, persist_sensors_prop)
 get_prop(hal_sensors_default, vendor_camera_prop)
+
+userdebug_or_eng(`
+  diag_use(hal_sensors_default)
+')
+# Ignore in user builds
+dontaudit hal_sensors_default vendor_diag_device:chr_file rw_file_perms;
