@@ -9,6 +9,10 @@ vendor.hentai.biometrics.fingerprint.inscreen::IFingerprintInscreen         u:ob
 vendor.xiaomi.hardware.motor::IMotor                                        u:object_r:hal_xiaomi_camera_motor_hwservice:s0
 vendor.hentai.camera.motor::ICameraMotor                                    u:object_r:hal_hentai_camera_motor_hwservice:s0
 
+# NXP
+vendor.nxp.nxpese::INxpEse                                                  u:object_r:nxpese_hwservice:s0
+vendor.nxp.nxpnfc::INxpNfc                                                  u:object_r:nxpnfc_hwservice:s0
+
 # Pixelstats
 hardware.google.pixelstats::IPixelStats                                     u:object_r:hal_pixelstats_hwservice:s0
 vendor.qti.hardware.bt_channel_avoidance::IBTChannelAvoidance               u:object_r:hal_bt_channel_avoidance_hwservice:s0
