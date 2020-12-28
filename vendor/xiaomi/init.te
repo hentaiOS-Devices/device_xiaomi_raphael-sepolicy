@@ -1,0 +1,2 @@
+# Allow init to bind mount dsp file
+allow init adsprpcd_file:file mounton;

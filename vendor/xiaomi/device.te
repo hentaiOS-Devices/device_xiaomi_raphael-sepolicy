@@ -1,0 +1,11 @@
+# AKM09970 driver
+type akm09970_device, dev_type, mlstrustedobject;
+
+# DRV8846 motor driver
+type drv8846_device, dev_type, mlstrustedobject;
+
+# Fingerprint
+type fingerprint_device, dev_type;
+
+# Sound
+type sound_device, dev_type;

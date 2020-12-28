@@ -1,6 +1,3 @@
-type hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
-type fingerprint_device, dev_type;
-
 allow hal_fingerprint_default {
   input_device
   sysfs_msm_subsys
@@ -28,7 +25,7 @@ r_dir_file(hal_fingerprint_default, firmware_file)
 get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
 set_prop(hal_fingerprint_default, vendor_fp_prop)
 
-add_hwservice(hal_fingerprint_default, hal_fingerprint_hwservice_xiaomi)
+add_hwservice(hal_fingerprint_default, hal_xiaomi_fingerprint_hwservice)
 
 # Allow hal_fingerprint_default to read fastrpc_shell_3
 allow hal_fingerprint_default public_adsprpcd_file:file r_file_perms;
